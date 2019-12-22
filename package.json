@@ -1,0 +1,37 @@
+{
+  "name": "reword",
+  "version": "0.0.1",
+  "description": "Utilities for building Wordpress themes with React.",
+  "main": "index.js",
+  "repository": "git@github.com:pragmaticdesign/reword.git",
+  "author": "James Cook <jamespetercook@googlemail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^3.2.1",
+    "@types/jest": "^24.0.24",
+    "@types/react": "^16.9.17",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^24.9.0",
+    "laravel-mix": "^5.0.1",
+    "react-dom": "^16.12.0",
+    "ts-jest": "^24.2.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev:watch": "yarn dev -- --watch",
+    "prod": "NODE_ENV=production node_modules/webpack/bin/webpack.js --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "start": "yarn dev:watch",
+    "test": "node_modules/.bin/jest",
+    "test:watch": "node_modules/.bin/jest --watch",
+    "test:save": "node_modules/.bin/jest --json > test-results.json"
+  }
+}
