@@ -1,10 +1,9 @@
 {
     "compilerOptions": {
-        "allowJs": true,
-        "allowSyntheticDefaultImports": true,
         "baseUrl": "./",
         "declaration": true,
         "declarationMap": true,
+        "declarationDir": "./dist/",
         "experimentalDecorators": true,
         "jsx": "react",
         "lib": [
@@ -12,7 +11,8 @@
             "es2017",
             "dom"
         ],
-        "module": "commonjs",
+        "module": "ES2015",
+        "moduleResolution": "Node",
         "noImplicitAny": false,
         "outDir": "./dist/",
         "paths": {
