@@ -1,3 +1,5 @@
+import { iPaginatedEndpointParams } from './api';
+
 export interface iPost {
     id: number;
     date: string; // iso date
@@ -32,4 +34,20 @@ export interface iPost {
     categories: number[];
     tags: any[]; // @todo define type
     links: {}; // @todo define
+}
+
+export interface iPostsEndpointParams extends iPaginatedEndpointParams {
+    context?: 'view' | 'embed' | 'edit';
+    author?: number;
+    author_exclude?: number;
+    before?: string; // iso date
+    exclude?: number[];
+    include?: number[];
+    orderby?: 'author' | 'date' | 'id' | 'include' | 'modified' | 'parent' | 'relevance' | 'slug' | 'include_slugs' | 'title';
+    status?: 'publish'; // @todo define other options
+    categories?: number[];
+    categories_exclude?: number[];
+    tags?: number[];
+    tags_exclude?: number[];
+    sticky?: boolean;
 }

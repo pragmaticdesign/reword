@@ -1,4 +1,4 @@
-import { iPost } from '@/interfaces/posts';
+import { iPost, iPostsEndpointParams } from '@/interfaces/posts';
 
 export interface iWordpressAPIService {
     /**
@@ -23,4 +23,11 @@ export interface iPostsService {
      * @returns {Promise<iPost>}
      */
     find: (id: number) => Promise<iPost>;
+
+    /**
+     * Retrieves a set of posts.
+     * 
+     * @returns {Promise<iPost[]>}
+     */
+    get: (params?: iPostsEndpointParams) => Promise<iPost[]>;
 }

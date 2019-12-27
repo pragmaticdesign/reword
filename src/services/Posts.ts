@@ -1,5 +1,5 @@
 import { iWordpressAPIService, iPostsService } from '@/interfaces/services';
-import { iPost } from '@/interfaces/posts';
+import { iPost, iPostsEndpointParams } from '@/interfaces/posts';
 import WordpressAPI from './WordpressAPI';
 
 export class Posts implements iPostsService {
@@ -20,6 +20,20 @@ export class Posts implements iPostsService {
     public async find(id: number): Promise<iPost> {
         try {
             const result = await this.api.get(`/posts/${id}`);
+            return Promise.resolve(result);
+        } catch (err) {
+            throw err;
+        }
+    }
+
+    /**
+     * Retrieves a set of posts.
+     * 
+     * @returns {Promise<iPost[]>}
+     */
+    public async get(params?: iPostsEndpointParams): Promise<iPost[]> {
+        try {
+            const result = await this.api.get('/posts', params);
             return Promise.resolve(result);
         } catch (err) {
             throw err;
