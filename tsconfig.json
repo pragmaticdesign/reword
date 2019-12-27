@@ -3,6 +3,8 @@
         "allowJs": true,
         "allowSyntheticDefaultImports": true,
         "baseUrl": "./",
+        "declaration": true,
+        "declarationMap": true,
         "experimentalDecorators": true,
         "jsx": "react",
         "lib": [
