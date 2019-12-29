@@ -5,14 +5,15 @@
         "declarationMap": true,
         "declarationDir": "./dist/",
         "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
         "jsx": "react",
         "lib": [
             "es2015",
             "es2017",
             "dom"
         ],
-        "module": "ES2015",
-        "moduleResolution": "Node",
+        "module": "commonjs",
+        "moduleResolution": "node",
         "noImplicitAny": false,
         "outDir": "./dist/",
         "paths": {
