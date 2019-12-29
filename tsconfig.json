@@ -1,9 +1,6 @@
 {
     "compilerOptions": {
         "baseUrl": "./",
-        "declaration": true,
-        "declarationMap": true,
-        "declarationDir": "./dist/",
         "experimentalDecorators": true,
         "forceConsistentCasingInFileNames": true,
         "jsx": "react",
