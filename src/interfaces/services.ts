@@ -1,4 +1,4 @@
-import { iPost, iPostsEndpointParams } from '@/interfaces/posts';
+import { iPost, iPostsEndpointParams } from '../interfaces/posts';
 
 export interface iWordpressAPIService {
     /**

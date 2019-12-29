@@ -1,5 +1,5 @@
-import { iWordpressAPIService, iPostsService } from '@/interfaces/services';
-import { iPost, iPostsEndpointParams } from '@/interfaces/posts';
+import { iWordpressAPIService, iPostsService } from '../interfaces/services';
+import { iPost, iPostsEndpointParams } from '../interfaces/posts';
 import WordpressAPI from './WordpressAPI';
 
 export class Posts implements iPostsService {

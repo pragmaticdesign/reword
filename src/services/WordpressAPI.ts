@@ -1,5 +1,5 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
-import { iWordpressAPIService as iService } from '@/interfaces/services';
+import { iWordpressAPIService as iService } from '../interfaces/services';
 
 export class WordpressAPISiteURLException extends Error {
     __proto__: Error;
