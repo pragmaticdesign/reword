@@ -5,4 +5,11 @@ const paths = {
     dist: './dist',
 };
 
+mix.webpackConfig({
+    output: {
+        library: 'reword',
+        libraryTarget: 'umd',
+    },
+});
+
 mix.ts(`${paths.src}/index.ts`, paths.dist);
